@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Movie</title>
+    <!-- call link navbar -->
+    <link rel="stylesheet" href="../style/HomePage/navbar.css">
+    <link rel="stylesheet" href="../style/HomePage/slideAnimation.css">
+    <link rel="stylesheet" href="../style/HomePage/scroll.css">
+    <link rel="stylesheet" href="../style/HomePage/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ8W4p4fK5tD7H12L0rXgSg4YhF2iH4o1h3R+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+      <!-- logo -->
+        <a href="#">
+            <!-- icon -->
+             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><g fill="none"><path fill="#f66" d="M23 4.826H1v14.348h22z"/><path fill="#ffc2c4" d="M1 4.826v14.348h2.992L18.34 4.826z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M23 4.826H1v14.348h22z" stroke-width="1"/><path fill="#000" d="M23 2.913v1.913H1V2.913A1.92 1.92 0 0 1 2.913 1h18.174A1.92 1.92 0 0 1 23 2.913M1 19.174h22v1.913A1.92 1.92 0 0 1 21.087 23H2.913A1.92 1.92 0 0 1 1 21.087z"/><path fill="#fff" d="M9.05 8.557a.626.626 0 0 0-.876.573v5.74a.626.626 0 0 0 .876.573l6.338-2.773a.731.731 0 0 0 0-1.34z"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M23 2.913v1.913H1V2.913A1.92 1.92 0 0 1 2.913 1h18.174A1.92 1.92 0 0 1 23 2.913M1 19.174h22v1.913A1.92 1.92 0 0 1 21.087 23H2.913A1.92 1.92 0 0 1 1 21.087zM9.05 8.557a.626.626 0 0 0-.876.573v5.74a.626.626 0 0 0 .876.573l6.338-2.773a.731.731 0 0 0 0-1.34z" stroke-width="1"/><path stroke="#fff" d="M8.055 3.152a.24.24 0 1 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M8.054 3.152a.24.24 0 1 0 0-.478m-3.945.478a.24.24 0 1 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M4.108 3.152a.24.24 0 1 0 0-.478m.001 18.652a.24.24 0 0 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M4.108 21.326a.24.24 0 0 0 0-.478M12 3.152a.24.24 0 1 1 0-.478m0 .478a.24.24 0 1 0 0-.478m3.946.478a.24.24 0 1 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M15.945 3.152a.24.24 0 1 0 0-.478m3.947.478a.24.24 0 1 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M19.891 3.152a.24.24 0 1 0 0-.478M8.055 21.326a.24.24 0 0 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M8.054 21.326a.24.24 0 0 0 0-.478m3.946.478a.24.24 0 0 1 0-.478m0 .478a.24.24 0 0 0 0-.478m3.946.478a.24.24 0 0 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M15.945 21.326a.24.24 0 0 0 0-.478m3.947.478a.24.24 0 0 1 0-.478" stroke-width="1"/><path stroke="#fff" d="M19.891 21.326a.24.24 0 0 0 0-.478" stroke-width="1"/></g></svg>
+        </a>
+      <!-- navigation -->
+        <nav>
+            <li class="home">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1"/></svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">Menu</a>
+                <ul class="dropdown">
+                    <li><a href="#anime">Anime</a></li>
+                    <li><a href="#adventure">Adventure</a></li>
+                    <li><a href="#drama">Drama</a></li>
+                    <li><a href="#horror">Horror</a></li>
+                    <li><a href="#romantic">Romantic</a></li>
+                </ul>
+            </li>
+            <li class="search">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><circle cx="8.5" cy="8.5" r="5"/><path d="M17.571 17.5L12 12"/></g></svg> -->
+                <a href="#">Search</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 6v-.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2v.8q0 .825-.587 1.413T18 20H6q-.825 0-1.412-.587T4 18"/></svg>
+                </a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="slide">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/06/best-korean-dramas.jpg" alt="">
+            
+            </div>
+            <div class="slide">
+                <img src="https://cdn.prod.website-files.com/619cb1d12095e3f3cdddaeb2/673c961ab7c2babe9cb3dfaf_Adventure%20animated%20movies-min.png" alt="">
+            
+            </div>
+            <div class="slide">
+                <img src="https://middleclass.sg/wp-content/uploads/2022/03/Rom-Com-Kdrama-FB-Cover-1024x538.jpg" alt="">
+            
+            </div>
+            <div class="slide">
+                <img src="https://cinema.usc.edu/userfiles/E8832F9A4CADF25710BBCB89FA03462505637A6Dimages/Halloween_Listicle.png" alt="">
+            
+            </div>
+            <div class="slide">
+                <img src="https://dramaslot.com/wp-content/uploads/2023/08/When-I-Fly-Towards-You.webp" alt="">
+            
+            </div>
+        </section>
+    </main>
+
+        <!-- scroll -->
+        <!-- KDrama Movie -->
+        <section class="container-movie">
+            <!-- card 1 -->
+            <section id="drama"> 
+                <a href="./Page/detailcard.html" class="class-link"> 
+                    <h1>KDrama Movie</h1>
+                    <div class="scroll-movie">
+                        <div class="card">
+                            <img src="https://resizing.flixster.com/qiguCB_5aocBdVEDTTaVmgXnp_w=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p22267462_i_h10_aa.jpg">
+                            <div class="ep">Ep: 12</div>
+                            <div class="text">Alchemy of Souls</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://fr.web.img2.acsta.net/r_654_368/img/84/a7/84a70c194f595b69b87722f003fa7d02.jpg" alt="">
+                            <div class="ep">Ep: 16</div>
+                            <div class="text">True Beauty</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://preview.redd.it/which-k-drama-do-you-wish-had-a-season-2-or-3-v0-k8znhnh5haue1.jpeg?width=640&crop=smart&auto=webp&s=9162f9db2a4acaf2e45d9e5c7c2b141b27a2f364" alt="">
+                            <div class="ep">Ep: 16</div>
+                            <div class="text">Moon Lovers</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://cdn.esquireindia.co.in/editor-images/2025-07-23T10%3A46%3A06.797Z-hiddenlove.jpg">
+                            <div class="ep">Ep: 32</div>
+                            <div class="text">Hidde Love</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://images.ctfassets.net/pl05rcmbdryr/3RAKgitBeuz44smWE4Wje4/f8a737ea42430d21b0d267dd08366d7a/Ashes_of_Love________.jpeg?w=750&q=75&fm=webp" alt="">
+                            <div class="ep">Ep: 30</div>
+                            <div class="text">Ashes of Love</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://api.duniagames.co.id/api/content/upload/file/8274512131672294648.jpg" alt="">
+                            <div class="ep">Ep: 06</div>
+                            <div class="text">Yakuza Lover</div>
+                        </div>
+
+                    </div>
+                </a>
+            </section>
+             
+        </section>
+
+        <section class="container-movie">
+            <!-- card 2 -->
+            <section id="anime">
+                <a href="./Page/detailcard.html" class="class-link"> 
+                    <h1>Top Anime Movie</h1>
+                    <div class="scroll-movie">
+                        <div class="card">
+                            <img src="https://www.slugmag.com/wp/wp-content/uploads/2017/04/screen-shot-2016-11-27-at-1-42-50-pm.png">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">Your Name</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://miro.medium.com/1*x3SOFYhOfW2q7wWDI_GtXA.jpeg">
+                            <div class="ep">Ep: 03</div>
+                            <div class="text">A Silent Voice</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2023/10/jujutsu-kaisen-s-main-cast.jpg?w=1200&h=675&fit=crop">
+                            <div class="ep">Ep: 23</div>
+                            <div class="text">jujutsu kaisen</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://i.redd.it/my-happy-marriage-bd-dvd-vol-3-illustrations-v0-4fhw9x20117c1.jpg?width=4010&format=pjpg&auto=webp&s=5bb3e4ec2d18319fba9eaf2d9a4e20ca030f27e7">
+                            <div class="ep">Ep: 10</div>
+                            <div class="text">My Happy Marriage</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2024/10/demon-slayer-roar-of-victory-poster.jpg?w=1200&h=675&fit=crop">
+                            <div class="ep">Ep: 05</div>
+                            <div class="text">Demon Slayer</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://timeforwritingblog.wordpress.com/wp-content/uploads/2019/09/189158.jpg?w=720">
+                            <div class="ep">Ep: 16</div>
+                            <div class="text">Kakegurui</div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+             
+        </section>
+        
+
+        <section class="container-movie">
+             <!-- card 3 -->
+            <section id="romantic">
+                <a href="./Page/detailcard.html" class="class-link"> 
+                    <h1>Top-Romentic Movie</h1>
+                    <div class="scroll-movie">
+
+                        <div class="card">
+                            <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQeVJzutNAw6e9lvTtNnFy__ylnX-xXrp1cQHSqAF1ixAEQcmEb0TNKYkU6C8ZsNwukgS7KdGZYWtJQ0fN5TErDo9zb-olOoK6VAeY1GiywUtlTxhNT2a45bS-n8QHeEVHWyTwn1vclFyG80po3QC.jpg?r=733">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">My Oxford Year</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://images.justwatch.com/backdrop/250338350/s640/cinderella-2021">
+                            <div class="ep">Ep: 06</div>
+                            <div class="text">cinderella</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQc4BxBKklYspHhupRrZIFeQDHhzWHkQmd0ANkznfAoRYe3guV1J1Egisq5v3MJ1cn8jUXXYb3qeULhQ0HLqyR-IWRNbBO5NDrYl8MHmWbe4NucAcjz_AXOkyNK3fCz4poV52qC4NIB1dqKwFJ6VZWrpPWmc.jpg?r=07a">
+                            <div class="ep">Ep: 16</div>
+                            <div class="text">King The Land</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVidJDtAuK3IgPJFPl06IuSZxxfE9-uXVF-yqK9ESJY8BqyJ9iSwtkbpVNxB3PY1lU79Uurk1f-KOhCfjgdFVQn47bHe446qPa_r.jpg?r=ec8">
+                            <div class="ep">Ep: 34</div>
+                            <div class="text">Fly Forward to You</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://asianwiki.com/images/b/b6/You_Who_Came_From_The_Stars-001.jpg">
+                            <div class="ep">Ep: 16</div>
+                            <div class="text">My Love From the Star</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://resizing.flixster.com/V6ycd6P8ue3eBvM0iyj9mwETeMw=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p17608361_b_h10_af.jpg">
+                            <div class="ep">Ep: 30</div>
+                            <div class="text">Put Your Head On My Shoulder</div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </section>
+
+
+        <section class="container-movie">
+            <!-- card 4 -->
+            <section id="adventure">
+                <a href="./Page/detailcard.html" class="class-link"> 
+                    <h1>Adventure Movie</h1>
+                    <div class="scroll-movie">
+                        <div class="card">
+                            <img src="https://shaolin-kungfu.com/wp-content/uploads/2025/03/Ne-Zha-blog-header-image.png">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">Ne Zha2</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://i.ytimg.com/vi/22w7z_lT6YM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB8hdcinp8PhoiHrBu5W2kV6EE8oQ">
+                            <div class="ep">Ep: 03</div>
+                            <div class="text">How To Train Your Dragon</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://screenanarchy.com/assets_c/2012/09/journey-to-the-center-of-the-earth-2-650-thumb-860xauto-28850.jpg">
+                            <div class="ep">Ep: 04</div>
+                            <div class="text">The Mysterious Island</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://cdn1.epicgames.com/offer/wombat/landscapewwz-aftermath-1248x702_1248x702-43415cb8226261eba181a914f0bc85bc?resize=1&w=480&h=270&quality=medium">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">World War Z</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2022/03/09/2011112003783/TSBMSOW_SAlone_16_9_1920x1080_1223911_1920x1080.jpg">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">The SpongeBob SquarePants</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2022/04/21/2025229379685/LOSTC_SAlone_16_9_1920x1080_1314528_1920x1080.jpg">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">The Lost City</div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+             
+        </section>
+        
+
+        <section class="container-movie">
+            <!-- card 5 -->
+            <section id="horror">
+                <a href="./Page/detailcard.html" class="class-link"> 
+                    <h1>Top Horror Movie</h1>
+                    <div class="scroll-movie">
+                        <div class="card">
+                            <img src="https://pixel.disco.ott.showmax.com/uuid/01524649-4251-3d25-9de3-284cc48af02a/ASSET_CLEAN_WIDE?language=en-US&proposition=SHOWMAX&version=e63c85b4-9c14-3174-a3a4-c358ce3173da">
+                            <div class="ep">Ep: 02</div>
+                            <div class="text">Smile</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://canvas-lb.tubitv.com/opts/vicJrQDImP0yIQ==/af851b7f-a2d2-4683-a27a-a9d70ffced24/CPwDEJ0COgUxLjEuOA==">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">LET ME IN</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://ladygeekgirl.wordpress.com/wp-content/uploads/2013/11/carrie-2013.png">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">Carrie (2013)</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://filmmovement.com/userFiles/uploads/films/hide-and-seek/hide-and-seek_cover.jpg">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">Hide And Seek</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://1.vikiplatform.com/c/37058c/ce84c2a8b6.jpg?x=b&a=0x0">
+                            <div class="ep">Ep: 02</div>
+                            <div class="text">Train To Busan</div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/hulu/30277CB4B411E4BAAFA778A5DAD53A1233364D03E876188F501B7F9E167BDB94/compose?format=webp&width=2560">
+                            <div class="ep">Ep: 01</div>
+                            <div class="text">The Grudge</div>
+                        </div>
+
+                    </div>
+                </a>
+            </section>
+        </section>
+            <!-- card 6 -->
+        <section class="container-movie">
+            <section id="adventure">
+                <h1>Adventure Movie</h1>
+                <div class="scroll-movie">
+                    <div class="card">
+                        <img src="https://shaolin-kungfu.com/wp-content/uploads/2025/03/Ne-Zha-blog-header-image.png">
+                        <div class="ep">Ep: 01</div>
+                        <div class="text">Ne Zha2</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/22w7z_lT6YM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB8hdcinp8PhoiHrBu5W2kV6EE8oQ">
+                        <div class="ep">Ep: 03</div>
+                        <div class="text">How To Train Your Dragon</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://screenanarchy.com/assets_c/2012/09/journey-to-the-center-of-the-earth-2-650-thumb-860xauto-28850.jpg">
+                        <div class="ep">Ep: 04</div>
+                        <div class="text">The Mysterious Island</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://cdn1.epicgames.com/offer/wombat/landscapewwz-aftermath-1248x702_1248x702-43415cb8226261eba181a914f0bc85bc?resize=1&w=480&h=270&quality=medium">
+                        <div class="ep">Ep: 01</div>
+                        <div class="text">World War Z</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2022/03/09/2011112003783/TSBMSOW_SAlone_16_9_1920x1080_1223911_1920x1080.jpg">
+                        <div class="ep">Ep: 01</div>
+                        <div class="text">The SpongeBob SquarePants</div>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2022/04/21/2025229379685/LOSTC_SAlone_16_9_1920x1080_1314528_1920x1080.jpg">
+                        <div class="ep">Ep: 01</div>
+                        <div class="text">The Lost City</div>
+                    </div>
+                </div>
+            </section> 
+        </section>
+        
+        
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h2>Pink-Movie.com</h2>
+                    <p>Your ultimate movie guide</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="links-section">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#anime">Anime</a></li>
+                            <li><a href="#drama">Drama</a></li>
+                            <li><a href="#horror">Horror</a></li>
+                            <li><a href="#romantic">Romantic</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-section">
+                        <h3>Follow Us</h3>
+                        <ul class="social-links">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pink-Movie.com. All rights reserved.</p>
+            </div>
+        </footer>
+
+    
+
+    
+
+</body>
+
+</html>
