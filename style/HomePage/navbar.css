@@ -22,9 +22,18 @@ header{
     z-index: 999;
     /* derm3 oy fixed nv ler ke */
 }
+header a {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+        
+}
 nav{
     display: flex;
-    padding-left: 65%;
+    padding-left: 60%;
 }
 nav li{
     list-style: none;
